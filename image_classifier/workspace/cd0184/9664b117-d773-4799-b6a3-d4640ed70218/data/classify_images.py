@@ -71,7 +71,7 @@ def classify_images(images_dir, results_dic, model):
     # classifier function
     for key in results_dic:
        
-       # TODO: 3a. Set the string variable model_label to be the string that's 
+       # Set the string variable model_label to be the string that's 
        #           returned from using the classifier function instead of the   
        #           empty string below.
        #
@@ -80,7 +80,7 @@ def classify_images(images_dir, results_dic, model):
        # as classifier label
        model_label = classifier(images_dir + key, model)
 
-       # TODO: 3b. BELOW REPLACE pass with CODE to process the model_label to 
+       # . BELOW REPLACE pass with CODE to process the model_label to 
        #           convert all characters within model_label to lowercase 
        #           letters and then remove whitespace characters from the ends
        #           of model_label. Be certain the resulting processed string 
@@ -93,7 +93,7 @@ def classify_images(images_dir, results_dic, model):
        # defines truth as pet image label 
        truth = results_dic[key][0]
 
-       # TODO: 3c. REPLACE pass BELOW with CODE that uses the extend list function
+       #REPLACE pass BELOW with CODE that uses the extend list function
        #           to add the classifier label (model_label) and the value of
        #           1 (where the value of 1 indicates a match between pet image 
        #           label and the classifier label) to the results_dic dictionary
@@ -105,7 +105,7 @@ def classify_images(images_dir, results_dic, model):
        if truth in model_label:
            results_dic[key].extend([model_label, 1])
 
-       # TODO: 3d. REPLACE pass BELOW with CODE that uses the extend list function
+       # . REPLACE pass BELOW with CODE that uses the extend list function
        #           to add the classifier label (model_label) and the value of
        #           0 (where the value of 0 indicates NOT a match between the pet 
        #           image label and the classifier label) to the results_dic 
